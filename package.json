@@ -1,0 +1,18 @@
+{
+  "name": "react-web3-express-typescript-biolerplate",
+  "version": "0.0.2",
+  "description": "React + Web3 + Express server + Typescript",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dmitrytarassov/react-web3-express-typescript-biolerplate.git"
+  },
+  "author": "Dmitrii Tarasov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmitrytarassov/react-web3-express-typescript-biolerplate/issues"
+  },
+  "homepage": "https://github.com/dmitrytarassov/react-web3-express-typescript-biolerplate"
+}

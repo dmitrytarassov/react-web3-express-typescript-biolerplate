@@ -1,0 +1,132 @@
+@green: green;
+@link-color:        #002366;
+@link-color-hover:  #26d4aa;
+@button-after:  darken(@link-color, 80%);
+@button-padding: 5px;
+@button-radius: 15px;
+@card-border: 0 0 2px 0 rgb(145 158 171 / 20%), 0 12px 24px -4px rgb(145 158 171 / 12%);
+
+h1, h2, h3, h4 {
+  margin: 0 0 16px;
+}
+
+body {
+  margin: auto;
+  font-family: sans-serif;
+  padding: 8px;
+}
+
+select {
+  width: 200px;
+}
+
+a, .link {
+  color: @link-color;
+  cursor: pointer;
+}
+a:hover, .link:hover {
+  color: @link-color-hover;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 32px;
+  padding: 16px;
+  box-shadow: @card-border;
+
+  a {
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  a:not(:last-child) {
+    margin-right: 16px;
+  }
+}
+
+.markets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.market {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: @card-border;
+  border-radius: 8px;
+}
+
+select, input, button {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 4px 8px;
+  line-height: 16px;
+}
+
+.select {
+  display: flex;
+  width: 300px;
+  margin-bottom: 16px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+
+  p + p {
+    margin-top: 8px;
+  }
+
+  p {
+    span {
+      margin-left: 8px;
+      color: @green;
+      cursor: pointer;
+    }
+  }
+}
+
+.transactions {
+  padding: 16px;
+  box-shadow: @card-border;
+  border-radius: 8px;
+
+  & + & {
+    margin-top: 16px;
+  }
+}
+
+th {
+  text-align: left;
+}
+
+table {
+  font-size: 14px;
+}
+
+.linkContainer {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
